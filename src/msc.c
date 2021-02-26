@@ -869,6 +869,9 @@ __attribute__((section(".binfo"))) __attribute__((__used__)) const UF2_BInfo bin
 #ifdef HAS_CONFIG_DATA
     .config_data = config_data,
 #endif
+#ifdef HAS_METADATA
+    .metadata = metadata,
+#endif
 #if USE_MSC_HANDOVER
     .handoverMSC = handover,
 #endif
