@@ -35,6 +35,17 @@ uint8_t pageBuf[FLASH_ROW_SIZE];
 #endif
 
 void setBootProt(int v) {
+#if 0
+    // Disable this horribly broken code which just erases the factory provided
+    // calibration values which cannot be recovered later.
+    //
+    // "The first eight 32-bit words (32 Bytes) of the Non Volatile Memory (NVM) User Page
+    //  contain calibration data that are automatically read at device power on."
+    //
+    // "Before erasing the NVM User Page, ensure that the first 32 Bytes are read to a
+    //  buffer and later written back to the same area unless a configuration change
+    //  is intended."
+
     uint32_t fuses[2];
 
     #ifdef SAMD21
@@ -105,6 +116,7 @@ void setBootProt(int v) {
     #endif
 
     resetIntoApp();
+#endif
 }
 
 int main(void) {
