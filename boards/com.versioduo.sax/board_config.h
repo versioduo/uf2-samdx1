@@ -1,6 +1,6 @@
 #pragma once
 
-#define BOARD_NAME                 "pad"
+#define BOARD_NAME                 "sax"
 #define BOARD_ID                   "versioduo:samd:" BOARD_NAME
 #define VENDOR_NAME                "Versio Duo"
 #define PRODUCT_NAME               "V2 " BOARD_NAME
@@ -8,7 +8,7 @@
 #define INDEX_URL                  "https://versioduo.com/#" BOARD_NAME
 
 #define USB_VID                    0x6666
-#define USB_PID                    0xd950
+#define USB_PID                    0xd980
 #define USB_POWER_MA               20
 
 #define LED_PIN                    PIN_PA27
