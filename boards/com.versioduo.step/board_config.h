@@ -4,7 +4,7 @@
 #define BOARD_ID                   "versioduo:samd:" BOARD_NAME
 #define VENDOR_NAME                "Versio Duo"
 #define PRODUCT_NAME               "V2 " BOARD_NAME
-#define VOLUME_LABEL               PRODUCT_NAME
+#define VOLUME_LABEL               "V2 boot"
 #define INDEX_URL                  "https://versioduo.com/#" BOARD_NAME
 
 
